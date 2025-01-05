@@ -1,5 +1,7 @@
 package com.vittech.inetbanking.utility;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -74,5 +76,11 @@ public class Helper {
 		}
 	}
 	
-
+	
+	public static String getTimeStamp()
+	{
+		return new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss").format(new Date());
+	}
+	
+	
 }
